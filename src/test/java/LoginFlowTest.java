@@ -15,6 +15,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import stellarPageObject.LoginPage;
 
+import static driver.WebDriverCreator.createWebDriver;
 import static org.junit.Assert.assertEquals;
 
 @RunWith(Parameterized.class)
@@ -37,7 +38,7 @@ public class LoginFlowTest {
 
     @Before
     public void setUp() {
-        driver = new ChromeDriver();
+        driver = createWebDriver();
         userSteps = new UserSteps();
     }
 

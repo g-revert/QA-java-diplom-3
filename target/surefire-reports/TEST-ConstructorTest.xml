@@ -1,80 +1,76 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="ConstructorTest" time="4.345" tests="1" errors="1" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="ConstructorTest" time="5.016" tests="1" errors="1" skipped="0" failures="0">
   <properties>
-    <property name="gopherProxySet" value="false"/>
-    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
-    <property name="java.specification.version" value="11"/>
-    <property name="sun.cpu.isalist" value=""/>
+    <property name="java.specification.version" value="19"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
     <property name="java.class.path" value="/Users/aydin/Documents/QA-java-diplom-3/target/test-classes:/Users/aydin/Documents/QA-java-diplom-3/target/classes:/Users/aydin/.m2/repository/org/seleniumhq/selenium/selenium-api/4.8.2/selenium-api-4.8.2.jar:/Users/aydin/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/4.8.2/selenium-chrome-driver-4.8.2.jar:/Users/aydin/.m2/repository/com/google/auto/service/auto-service-annotations/1.0.1/auto-service-annotations-1.0.1.jar:/Users/aydin/.m2/repository/com/google/auto/service/auto-service/1.0.1/auto-service-1.0.1.jar:/Users/aydin/.m2/repository/com/google/auto/auto-common/1.2/auto-common-1.2.jar:/Users/aydin/.m2/repository/com/google/guava/guava/31.1-jre/guava-31.1-jre.jar:/Users/aydin/.m2/repository/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar:/Users/aydin/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/Users/aydin/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/Users/aydin/.m2/repository/org/checkerframework/checker-qual/3.12.0/checker-qual-3.12.0.jar:/Users/aydin/.m2/repository/com/google/errorprone/error_prone_annotations/2.11.0/error_prone_annotations-2.11.0.jar:/Users/aydin/.m2/repository/com/google/j2objc/j2objc-annotations/1.3/j2objc-annotations-1.3.jar:/Users/aydin/.m2/repository/org/seleniumhq/selenium/selenium-chromium-driver/4.8.2/selenium-chromium-driver-4.8.2.jar:/Users/aydin/.m2/repository/org/seleniumhq/selenium/selenium-json/4.8.2/selenium-json-4.8.2.jar:/Users/aydin/.m2/repository/org/seleniumhq/selenium/selenium-manager/4.8.2/selenium-manager-4.8.2.jar:/Users/aydin/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/4.8.2/selenium-remote-driver-4.8.2.jar:/Users/aydin/.m2/repository/com/beust/jcommander/1.82/jcommander-1.82.jar:/Users/aydin/.m2/repository/io/netty/netty-buffer/4.1.90.Final/netty-buffer-4.1.90.Final.jar:/Users/aydin/.m2/repository/io/netty/netty-codec-http/4.1.90.Final/netty-codec-http-4.1.90.Final.jar:/Users/aydin/.m2/repository/io/netty/netty-codec/4.1.90.Final/netty-codec-4.1.90.Final.jar:/Users/aydin/.m2/repository/io/netty/netty-handler/4.1.90.Final/netty-handler-4.1.90.Final.jar:/Users/aydin/.m2/repository/io/netty/netty-common/4.1.90.Final/netty-common-4.1.90.Final.jar:/Users/aydin/.m2/repository/io/netty/netty-transport-classes-epoll/4.1.90.Final/netty-transport-classes-epoll-4.1.90.Final.jar:/Users/aydin/.m2/repository/io/netty/netty-transport-classes-kqueue/4.1.90.Final/netty-transport-classes-kqueue-4.1.90.Final.jar:/Users/aydin/.m2/repository/io/netty/netty-transport-native-epoll/4.1.90.Final/netty-transport-native-epoll-4.1.90.Final.jar:/Users/aydin/.m2/repository/io/netty/netty-transport-native-kqueue/4.1.90.Final/netty-transport-native-kqueue-4.1.90.Final.jar:/Users/aydin/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.90.Final/netty-transport-native-unix-common-4.1.90.Final.jar:/Users/aydin/.m2/repository/io/netty/netty-transport/4.1.90.Final/netty-transport-4.1.90.Final.jar:/Users/aydin/.m2/repository/io/netty/netty-resolver/4.1.90.Final/netty-resolver-4.1.90.Final.jar:/Users/aydin/.m2/repository/io/opentelemetry/opentelemetry-api/1.24.0/opentelemetry-api-1.24.0.jar:/Users/aydin/.m2/repository/io/opentelemetry/opentelemetry-context/1.24.0/opentelemetry-context-1.24.0.jar:/Users/aydin/.m2/repository/io/opentelemetry/opentelemetry-exporter-logging/1.24.0/opentelemetry-exporter-logging-1.24.0.jar:/Users/aydin/.m2/repository/io/opentelemetry/opentelemetry-sdk-metrics/1.24.0/opentelemetry-sdk-metrics-1.24.0.jar:/Users/aydin/.m2/repository/io/opentelemetry/opentelemetry-sdk-logs/1.24.0-alpha/opentelemetry-sdk-logs-1.24.0-alpha.jar:/Users/aydin/.m2/repository/io/opentelemetry/opentelemetry-api-logs/1.24.0-alpha/opentelemetry-api-logs-1.24.0-alpha.jar:/Users/aydin/.m2/repository/io/opentelemetry/opentelemetry-api-events/1.24.0-alpha/opentelemetry-api-events-1.24.0-alpha.jar:/Users/aydin/.m2/repository/io/opentelemetry/opentelemetry-sdk-common/1.24.0/opentelemetry-sdk-common-1.24.0.jar:/Users/aydin/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure-spi/1.24.0/opentelemetry-sdk-extension-autoconfigure-spi-1.24.0.jar:/Users/aydin/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure/1.24.0-alpha/opentelemetry-sdk-extension-autoconfigure-1.24.0-alpha.jar:/Users/aydin/.m2/repository/io/opentelemetry/opentelemetry-sdk-trace/1.24.0/opentelemetry-sdk-trace-1.24.0.jar:/Users/aydin/.m2/repository/io/opentelemetry/opentelemetry-sdk/1.24.0/opentelemetry-sdk-1.24.0.jar:/Users/aydin/.m2/repository/io/opentelemetry/opentelemetry-semconv/1.24.0-alpha/opentelemetry-semconv-1.24.0-alpha.jar:/Users/aydin/.m2/repository/io/ous/jtoml/2.0.0/jtoml-2.0.0.jar:/Users/aydin/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/Users/aydin/.m2/repository/org/asynchttpclient/async-http-client/2.12.3/async-http-client-2.12.3.jar:/Users/aydin/.m2/repository/org/asynchttpclient/async-http-client-netty-utils/2.12.3/async-http-client-netty-utils-2.12.3.jar:/Users/aydin/.m2/repository/io/netty/netty-codec-socks/4.1.60.Final/netty-codec-socks-4.1.60.Final.jar:/Users/aydin/.m2/repository/io/netty/netty-handler-proxy/4.1.60.Final/netty-handler-proxy-4.1.60.Final.jar:/Users/aydin/.m2/repository/io/netty/netty-transport-native-epoll/4.1.60.Final/netty-transport-native-epoll-4.1.60.Final-linux-x86_64.jar:/Users/aydin/.m2/repository/io/netty/netty-transport-native-kqueue/4.1.60.Final/netty-transport-native-kqueue-4.1.60.Final-osx-x86_64.jar:/Users/aydin/.m2/repository/org/reactivestreams/reactive-streams/1.0.3/reactive-streams-1.0.3.jar:/Users/aydin/.m2/repository/com/typesafe/netty/netty-reactive-streams/2.0.4/netty-reactive-streams-2.0.4.jar:/Users/aydin/.m2/repository/com/sun/activation/jakarta.activation/1.2.2/jakarta.activation-1.2.2.jar:/Users/aydin/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/4.8.2/selenium-firefox-driver-4.8.2.jar:/Users/aydin/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v85/4.8.2/selenium-devtools-v85-4.8.2.jar:/Users/aydin/.m2/repository/org/seleniumhq/selenium/selenium-http/4.8.2/selenium-http-4.8.2.jar:/Users/aydin/.m2/repository/dev/failsafe/failsafe/3.3.1/failsafe-3.3.1.jar:/Users/aydin/.m2/repository/junit/junit/4.13.2/junit-4.13.2.jar:/Users/aydin/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/aydin/.m2/repository/org/seleniumhq/selenium/selenium-support/4.8.2/selenium-support-4.8.2.jar:/Users/aydin/.m2/repository/net/bytebuddy/byte-buddy/1.14.2/byte-buddy-1.14.2.jar:/Users/aydin/.m2/repository/io/github/bonigarcia/webdrivermanager/5.3.2/webdrivermanager-5.3.2.jar:/Users/aydin/.m2/repository/org/slf4j/slf4j-api/2.0.6/slf4j-api-2.0.6.jar:/Users/aydin/.m2/repository/com/google/code/gson/gson/2.10.1/gson-2.10.1.jar:/Users/aydin/.m2/repository/com/github/docker-java/docker-java/3.2.14/docker-java-3.2.14.jar:/Users/aydin/.m2/repository/com/github/docker-java/docker-java-core/3.2.14/docker-java-core-3.2.14.jar:/Users/aydin/.m2/repository/com/github/docker-java/docker-java-api/3.2.14/docker-java-api-3.2.14.jar:/Users/aydin/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.10.3/jackson-annotations-2.10.3.jar:/Users/aydin/.m2/repository/commons-io/commons-io/2.6/commons-io-2.6.jar:/Users/aydin/.m2/repository/org/apache/commons/commons-compress/1.21/commons-compress-1.21.jar:/Users/aydin/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.10.3/jackson-databind-2.10.3.jar:/Users/aydin/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.10.3/jackson-core-2.10.3.jar:/Users/aydin/.m2/repository/org/bouncycastle/bcpkix-jdk15on/1.64/bcpkix-jdk15on-1.64.jar:/Users/aydin/.m2/repository/org/bouncycastle/bcprov-jdk15on/1.64/bcprov-jdk15on-1.64.jar:/Users/aydin/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.30/jcl-over-slf4j-1.7.30.jar:/Users/aydin/.m2/repository/com/github/docker-java/docker-java-transport-httpclient5/3.2.14/docker-java-transport-httpclient5-3.2.14.jar:/Users/aydin/.m2/repository/com/github/docker-java/docker-java-transport/3.2.14/docker-java-transport-3.2.14.jar:/Users/aydin/.m2/repository/net/java/dev/jna/jna/5.12.1/jna-5.12.1.jar:/Users/aydin/.m2/repository/org/brotli/dec/0.1.2/dec-0.1.2.jar:/Users/aydin/.m2/repository/org/apache/commons/commons-lang3/3.12.0/commons-lang3-3.12.0.jar:/Users/aydin/.m2/repository/org/apache/httpcomponents/client5/httpclient5/5.2.1/httpclient5-5.2.1.jar:/Users/aydin/.m2/repository/org/apache/httpcomponents/core5/httpcore5/5.2/httpcore5-5.2.jar:/Users/aydin/.m2/repository/org/apache/httpcomponents/core5/httpcore5-h2/5.2/httpcore5-h2-5.2.jar:/Users/aydin/.m2/repository/io/rest-assured/rest-assured/5.3.0/rest-assured-5.3.0.jar:/Users/aydin/.m2/repository/org/apache/groovy/groovy/4.0.6/groovy-4.0.6.jar:/Users/aydin/.m2/repository/org/apache/groovy/groovy-xml/4.0.6/groovy-xml-4.0.6.jar:/Users/aydin/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/Users/aydin/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/Users/aydin/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/aydin/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/Users/aydin/.m2/repository/org/apache/httpcomponents/httpmime/4.5.13/httpmime-4.5.13.jar:/Users/aydin/.m2/repository/org/hamcrest/hamcrest/2.1/hamcrest-2.1.jar:/Users/aydin/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/Users/aydin/.m2/repository/io/rest-assured/json-path/5.3.0/json-path-5.3.0.jar:/Users/aydin/.m2/repository/org/apache/groovy/groovy-json/4.0.6/groovy-json-4.0.6.jar:/Users/aydin/.m2/repository/io/rest-assured/rest-assured-common/5.3.0/rest-assured-common-5.3.0.jar:/Users/aydin/.m2/repository/io/rest-assured/xml-path/5.3.0/xml-path-5.3.0.jar:/Users/aydin/.m2/repository/io/qameta/allure/allure-junit4/2.21.0/allure-junit4-2.21.0.jar:/Users/aydin/.m2/repository/io/qameta/allure/allure-java-commons/2.21.0/allure-java-commons-2.21.0.jar:/Users/aydin/.m2/repository/io/qameta/allure/allure-model/2.21.0/allure-model-2.21.0.jar:/Users/aydin/.m2/repository/io/qameta/allure/allure-rest-assured/2.21.0/allure-rest-assured-2.21.0.jar:/Users/aydin/.m2/repository/io/qameta/allure/allure-attachments/2.21.0/allure-attachments-2.21.0.jar:/Users/aydin/.m2/repository/org/freemarker/freemarker/2.3.31/freemarker-2.3.31.jar:"/>
-    <property name="java.vm.vendor" value="Amazon.com Inc."/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="sun.arch.data.model" value="64"/>
-    <property name="java.vendor.url" value="https://aws.amazon.com/corretto/"/>
-    <property name="user.timezone" value=""/>
-    <property name="java.vm.specification.version" value="11"/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
     <property name="os.name" value="Mac OS X"/>
+    <property name="java.vm.specification.version" value="19"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="TR"/>
-    <property name="sun.boot.library.path" value="/Users/aydin/Library/Java/JavaVirtualMachines/corretto-11.0.18/Contents/Home/lib"/>
-    <property name="sun.java.command" value="/Users/aydin/Documents/QA-java-diplom-3/target/surefire/surefirebooter8069641043544025995.jar /Users/aydin/Documents/QA-java-diplom-3/target/surefire 2023-05-23T23-50-52_204-jvmRun1 surefire4917531771979402244tmp surefire_018014741286275420738tmp"/>
+    <property name="sun.boot.library.path" value="/Users/aydin/Library/Java/JavaVirtualMachines/openjdk-19.0.1/Contents/Home/lib"/>
+    <property name="sun.java.command" value="/Users/aydin/Documents/QA-java-diplom-3/target/surefire/surefirebooter10069812879556301281.jar /Users/aydin/Documents/QA-java-diplom-3/target/surefire 2023-05-24T14-21-14_821-jvmRun1 surefire11614034311023362632tmp surefire_08065287283594970032tmp"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/Users/aydin/Documents/QA-java-diplom-3/target/test-classes:/Users/aydin/Documents/QA-java-diplom-3/target/classes:/Users/aydin/.m2/repository/org/seleniumhq/selenium/selenium-api/4.8.2/selenium-api-4.8.2.jar:/Users/aydin/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/4.8.2/selenium-chrome-driver-4.8.2.jar:/Users/aydin/.m2/repository/com/google/auto/service/auto-service-annotations/1.0.1/auto-service-annotations-1.0.1.jar:/Users/aydin/.m2/repository/com/google/auto/service/auto-service/1.0.1/auto-service-1.0.1.jar:/Users/aydin/.m2/repository/com/google/auto/auto-common/1.2/auto-common-1.2.jar:/Users/aydin/.m2/repository/com/google/guava/guava/31.1-jre/guava-31.1-jre.jar:/Users/aydin/.m2/repository/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar:/Users/aydin/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/Users/aydin/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/Users/aydin/.m2/repository/org/checkerframework/checker-qual/3.12.0/checker-qual-3.12.0.jar:/Users/aydin/.m2/repository/com/google/errorprone/error_prone_annotations/2.11.0/error_prone_annotations-2.11.0.jar:/Users/aydin/.m2/repository/com/google/j2objc/j2objc-annotations/1.3/j2objc-annotations-1.3.jar:/Users/aydin/.m2/repository/org/seleniumhq/selenium/selenium-chromium-driver/4.8.2/selenium-chromium-driver-4.8.2.jar:/Users/aydin/.m2/repository/org/seleniumhq/selenium/selenium-json/4.8.2/selenium-json-4.8.2.jar:/Users/aydin/.m2/repository/org/seleniumhq/selenium/selenium-manager/4.8.2/selenium-manager-4.8.2.jar:/Users/aydin/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/4.8.2/selenium-remote-driver-4.8.2.jar:/Users/aydin/.m2/repository/com/beust/jcommander/1.82/jcommander-1.82.jar:/Users/aydin/.m2/repository/io/netty/netty-buffer/4.1.90.Final/netty-buffer-4.1.90.Final.jar:/Users/aydin/.m2/repository/io/netty/netty-codec-http/4.1.90.Final/netty-codec-http-4.1.90.Final.jar:/Users/aydin/.m2/repository/io/netty/netty-codec/4.1.90.Final/netty-codec-4.1.90.Final.jar:/Users/aydin/.m2/repository/io/netty/netty-handler/4.1.90.Final/netty-handler-4.1.90.Final.jar:/Users/aydin/.m2/repository/io/netty/netty-common/4.1.90.Final/netty-common-4.1.90.Final.jar:/Users/aydin/.m2/repository/io/netty/netty-transport-classes-epoll/4.1.90.Final/netty-transport-classes-epoll-4.1.90.Final.jar:/Users/aydin/.m2/repository/io/netty/netty-transport-classes-kqueue/4.1.90.Final/netty-transport-classes-kqueue-4.1.90.Final.jar:/Users/aydin/.m2/repository/io/netty/netty-transport-native-epoll/4.1.90.Final/netty-transport-native-epoll-4.1.90.Final.jar:/Users/aydin/.m2/repository/io/netty/netty-transport-native-kqueue/4.1.90.Final/netty-transport-native-kqueue-4.1.90.Final.jar:/Users/aydin/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.90.Final/netty-transport-native-unix-common-4.1.90.Final.jar:/Users/aydin/.m2/repository/io/netty/netty-transport/4.1.90.Final/netty-transport-4.1.90.Final.jar:/Users/aydin/.m2/repository/io/netty/netty-resolver/4.1.90.Final/netty-resolver-4.1.90.Final.jar:/Users/aydin/.m2/repository/io/opentelemetry/opentelemetry-api/1.24.0/opentelemetry-api-1.24.0.jar:/Users/aydin/.m2/repository/io/opentelemetry/opentelemetry-context/1.24.0/opentelemetry-context-1.24.0.jar:/Users/aydin/.m2/repository/io/opentelemetry/opentelemetry-exporter-logging/1.24.0/opentelemetry-exporter-logging-1.24.0.jar:/Users/aydin/.m2/repository/io/opentelemetry/opentelemetry-sdk-metrics/1.24.0/opentelemetry-sdk-metrics-1.24.0.jar:/Users/aydin/.m2/repository/io/opentelemetry/opentelemetry-sdk-logs/1.24.0-alpha/opentelemetry-sdk-logs-1.24.0-alpha.jar:/Users/aydin/.m2/repository/io/opentelemetry/opentelemetry-api-logs/1.24.0-alpha/opentelemetry-api-logs-1.24.0-alpha.jar:/Users/aydin/.m2/repository/io/opentelemetry/opentelemetry-api-events/1.24.0-alpha/opentelemetry-api-events-1.24.0-alpha.jar:/Users/aydin/.m2/repository/io/opentelemetry/opentelemetry-sdk-common/1.24.0/opentelemetry-sdk-common-1.24.0.jar:/Users/aydin/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure-spi/1.24.0/opentelemetry-sdk-extension-autoconfigure-spi-1.24.0.jar:/Users/aydin/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure/1.24.0-alpha/opentelemetry-sdk-extension-autoconfigure-1.24.0-alpha.jar:/Users/aydin/.m2/repository/io/opentelemetry/opentelemetry-sdk-trace/1.24.0/opentelemetry-sdk-trace-1.24.0.jar:/Users/aydin/.m2/repository/io/opentelemetry/opentelemetry-sdk/1.24.0/opentelemetry-sdk-1.24.0.jar:/Users/aydin/.m2/repository/io/opentelemetry/opentelemetry-semconv/1.24.0-alpha/opentelemetry-semconv-1.24.0-alpha.jar:/Users/aydin/.m2/repository/io/ous/jtoml/2.0.0/jtoml-2.0.0.jar:/Users/aydin/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/Users/aydin/.m2/repository/org/asynchttpclient/async-http-client/2.12.3/async-http-client-2.12.3.jar:/Users/aydin/.m2/repository/org/asynchttpclient/async-http-client-netty-utils/2.12.3/async-http-client-netty-utils-2.12.3.jar:/Users/aydin/.m2/repository/io/netty/netty-codec-socks/4.1.60.Final/netty-codec-socks-4.1.60.Final.jar:/Users/aydin/.m2/repository/io/netty/netty-handler-proxy/4.1.60.Final/netty-handler-proxy-4.1.60.Final.jar:/Users/aydin/.m2/repository/io/netty/netty-transport-native-epoll/4.1.60.Final/netty-transport-native-epoll-4.1.60.Final-linux-x86_64.jar:/Users/aydin/.m2/repository/io/netty/netty-transport-native-kqueue/4.1.60.Final/netty-transport-native-kqueue-4.1.60.Final-osx-x86_64.jar:/Users/aydin/.m2/repository/org/reactivestreams/reactive-streams/1.0.3/reactive-streams-1.0.3.jar:/Users/aydin/.m2/repository/com/typesafe/netty/netty-reactive-streams/2.0.4/netty-reactive-streams-2.0.4.jar:/Users/aydin/.m2/repository/com/sun/activation/jakarta.activation/1.2.2/jakarta.activation-1.2.2.jar:/Users/aydin/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/4.8.2/selenium-firefox-driver-4.8.2.jar:/Users/aydin/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v85/4.8.2/selenium-devtools-v85-4.8.2.jar:/Users/aydin/.m2/repository/org/seleniumhq/selenium/selenium-http/4.8.2/selenium-http-4.8.2.jar:/Users/aydin/.m2/repository/dev/failsafe/failsafe/3.3.1/failsafe-3.3.1.jar:/Users/aydin/.m2/repository/junit/junit/4.13.2/junit-4.13.2.jar:/Users/aydin/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/aydin/.m2/repository/org/seleniumhq/selenium/selenium-support/4.8.2/selenium-support-4.8.2.jar:/Users/aydin/.m2/repository/net/bytebuddy/byte-buddy/1.14.2/byte-buddy-1.14.2.jar:/Users/aydin/.m2/repository/io/github/bonigarcia/webdrivermanager/5.3.2/webdrivermanager-5.3.2.jar:/Users/aydin/.m2/repository/org/slf4j/slf4j-api/2.0.6/slf4j-api-2.0.6.jar:/Users/aydin/.m2/repository/com/google/code/gson/gson/2.10.1/gson-2.10.1.jar:/Users/aydin/.m2/repository/com/github/docker-java/docker-java/3.2.14/docker-java-3.2.14.jar:/Users/aydin/.m2/repository/com/github/docker-java/docker-java-core/3.2.14/docker-java-core-3.2.14.jar:/Users/aydin/.m2/repository/com/github/docker-java/docker-java-api/3.2.14/docker-java-api-3.2.14.jar:/Users/aydin/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.10.3/jackson-annotations-2.10.3.jar:/Users/aydin/.m2/repository/commons-io/commons-io/2.6/commons-io-2.6.jar:/Users/aydin/.m2/repository/org/apache/commons/commons-compress/1.21/commons-compress-1.21.jar:/Users/aydin/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.10.3/jackson-databind-2.10.3.jar:/Users/aydin/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.10.3/jackson-core-2.10.3.jar:/Users/aydin/.m2/repository/org/bouncycastle/bcpkix-jdk15on/1.64/bcpkix-jdk15on-1.64.jar:/Users/aydin/.m2/repository/org/bouncycastle/bcprov-jdk15on/1.64/bcprov-jdk15on-1.64.jar:/Users/aydin/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.30/jcl-over-slf4j-1.7.30.jar:/Users/aydin/.m2/repository/com/github/docker-java/docker-java-transport-httpclient5/3.2.14/docker-java-transport-httpclient5-3.2.14.jar:/Users/aydin/.m2/repository/com/github/docker-java/docker-java-transport/3.2.14/docker-java-transport-3.2.14.jar:/Users/aydin/.m2/repository/net/java/dev/jna/jna/5.12.1/jna-5.12.1.jar:/Users/aydin/.m2/repository/org/brotli/dec/0.1.2/dec-0.1.2.jar:/Users/aydin/.m2/repository/org/apache/commons/commons-lang3/3.12.0/commons-lang3-3.12.0.jar:/Users/aydin/.m2/repository/org/apache/httpcomponents/client5/httpclient5/5.2.1/httpclient5-5.2.1.jar:/Users/aydin/.m2/repository/org/apache/httpcomponents/core5/httpcore5/5.2/httpcore5-5.2.jar:/Users/aydin/.m2/repository/org/apache/httpcomponents/core5/httpcore5-h2/5.2/httpcore5-h2-5.2.jar:/Users/aydin/.m2/repository/io/rest-assured/rest-assured/5.3.0/rest-assured-5.3.0.jar:/Users/aydin/.m2/repository/org/apache/groovy/groovy/4.0.6/groovy-4.0.6.jar:/Users/aydin/.m2/repository/org/apache/groovy/groovy-xml/4.0.6/groovy-xml-4.0.6.jar:/Users/aydin/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/Users/aydin/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/Users/aydin/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/aydin/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/Users/aydin/.m2/repository/org/apache/httpcomponents/httpmime/4.5.13/httpmime-4.5.13.jar:/Users/aydin/.m2/repository/org/hamcrest/hamcrest/2.1/hamcrest-2.1.jar:/Users/aydin/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/Users/aydin/.m2/repository/io/rest-assured/json-path/5.3.0/json-path-5.3.0.jar:/Users/aydin/.m2/repository/org/apache/groovy/groovy-json/4.0.6/groovy-json-4.0.6.jar:/Users/aydin/.m2/repository/io/rest-assured/rest-assured-common/5.3.0/rest-assured-common-5.3.0.jar:/Users/aydin/.m2/repository/io/rest-assured/xml-path/5.3.0/xml-path-5.3.0.jar:/Users/aydin/.m2/repository/io/qameta/allure/allure-junit4/2.21.0/allure-junit4-2.21.0.jar:/Users/aydin/.m2/repository/io/qameta/allure/allure-java-commons/2.21.0/allure-java-commons-2.21.0.jar:/Users/aydin/.m2/repository/io/qameta/allure/allure-model/2.21.0/allure-model-2.21.0.jar:/Users/aydin/.m2/repository/io/qameta/allure/allure-rest-assured/2.21.0/allure-rest-assured-2.21.0.jar:/Users/aydin/.m2/repository/io/qameta/allure/allure-attachments/2.21.0/allure-attachments-2.21.0.jar:/Users/aydin/.m2/repository/org/freemarker/freemarker/2.3.31/freemarker-2.3.31.jar:"/>
-    <property name="sun.cpu.endian" value="little"/>
     <property name="allure.results.directory" value="/Users/aydin/Documents/QA-java-diplom-3/target/allure-results"/>
+    <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="/Users/aydin"/>
     <property name="user.language" value="en"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
-    <property name="java.version.date" value="2023-01-17"/>
-    <property name="java.home" value="/Users/aydin/Library/Java/JavaVirtualMachines/corretto-11.0.18/Contents/Home"/>
+    <property name="java.version.date" value="2022-10-18"/>
+    <property name="java.home" value="/Users/aydin/Library/Java/JavaVirtualMachines/openjdk-19.0.1/Contents/Home"/>
     <property name="file.separator" value="/"/>
     <property name="basedir" value="/Users/aydin/Documents/QA-java-diplom-3"/>
     <property name="java.vm.compressedOopsMode" value="Zero based"/>
     <property name="line.separator" value="&#10;"/>
-    <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
-    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="/Users/aydin/Documents/QA-java-diplom-3/target/surefire/surefirebooter8069641043544025995.jar"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="apple.awt.application.name" value="ForkedBooter"/>
+    <property name="surefire.real.class.path" value="/Users/aydin/Documents/QA-java-diplom-3/target/surefire/surefirebooter10069812879556301281.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
-    <property name="java.runtime.version" value="11.0.18+10-LTS"/>
+    <property name="java.runtime.version" value="19.0.1+10-21"/>
     <property name="user.name" value="aydin"/>
+    <property name="stdout.encoding" value="UTF-8"/>
     <property name="path.separator" value=":"/>
     <property name="os.version" value="13.3.1"/>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="file.encoding" value="UTF-8"/>
     <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
-    <property name="java.vendor.version" value="Corretto-11.0.18.10.1"/>
     <property name="localRepository" value="/Users/aydin/.m2/repository"/>
-    <property name="java.vendor.url.bug" value="https://github.com/corretto/corretto-11/issues/"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
     <property name="java.io.tmpdir" value="/var/folders/7z/xk_0s2617tl5kmyzksgmb7t80000gn/T/"/>
     <property name="idea.version" value="2021.3.3"/>
-    <property name="java.version" value="11.0.18"/>
+    <property name="java.version" value="19.0.1"/>
     <property name="user.dir" value="/Users/aydin/Documents/QA-java-diplom-3"/>
     <property name="os.arch" value="x86_64"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
-    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="native.encoding" value="UTF-8"/>
     <property name="java.library.path" value="/Users/aydin/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
-    <property name="java.vm.info" value="mixed mode"/>
-    <property name="java.vendor" value="Amazon.com Inc."/>
-    <property name="java.vm.version" value="11.0.18+10-LTS"/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="UTF-8"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="19.0.1+10-21"/>
     <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
-    <property name="java.class.version" value="55.0"/>
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.class.version" value="63.0"/>
   </properties>
-  <testcase name="constructorTabsTest" classname="ConstructorTest" time="4.342">
-    <error message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(.//section/div/div)[2]&quot;}&#10;  (Session info: chrome=113.0.5672.126)&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: &apos;4.8.2&apos;, revision: &apos;826dbfc730&apos;&#10;System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;13.3.1&apos;, java.version: &apos;11.0.18&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [37448ed7794eb737064b094291f79ef6, findElement {using=xpath, value=(.//section/div/div)[2]}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.126, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: /var/folders/7z/xk_0s2617tl...}, goog:chromeOptions: {debuggerAddress: localhost:60160}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:60160/devtoo..., se:cdpVersion: 113.0.5672.126, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 37448ed7794eb737064b094291f79ef6" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: 
+  <testcase name="constructorTabsTest" classname="ConstructorTest" time="5.014">
+    <error message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(.//section/div/div)[2]&quot;}&#10;  (Session info: chrome=110.0.5481.208)&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: &apos;4.8.2&apos;, revision: &apos;826dbfc730&apos;&#10;System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;13.3.1&apos;, java.version: &apos;19.0.1&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [8343c5f18de79b39d733525ad7b9da1d, findElement {using=xpath, value=(.//section/div/div)[2]}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.208, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: /var/folders/7z/xk_0s2617tl...}, goog:chromeOptions: {debuggerAddress: localhost:56052}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:56052/devtoo..., se:cdpVersion: 110.0.5481.208, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 8343c5f18de79b39d733525ad7b9da1d" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: 
 no such element: Unable to locate element: {"method":"xpath","selector":"(.//section/div/div)[2]"}
-  (Session info: chrome=113.0.5672.126)
+  (Session info: chrome=110.0.5481.208)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.8.2', revision: '826dbfc730'
-System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.3.1', java.version: '11.0.18'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.3.1', java.version: '19.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [37448ed7794eb737064b094291f79ef6, findElement {using=xpath, value=(.//section/div/div)[2]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.126, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: /var/folders/7z/xk_0s2617tl...}, goog:chromeOptions: {debuggerAddress: localhost:60160}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:60160/devtoo..., se:cdpVersion: 113.0.5672.126, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 37448ed7794eb737064b094291f79ef6
-	at ConstructorTest.constructorTabsTest(ConstructorTest.java:48)
+Command: [8343c5f18de79b39d733525ad7b9da1d, findElement {using=xpath, value=(.//section/div/div)[2]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.208, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: /var/folders/7z/xk_0s2617tl...}, goog:chromeOptions: {debuggerAddress: localhost:56052}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:56052/devtoo..., se:cdpVersion: 110.0.5481.208, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 8343c5f18de79b39d733525ad7b9da1d
+	at ConstructorTest.constructorTabsTest(ConstructorTest.java:50)
 </error>
     <system-out><![CDATA[Request method:	POST
 Request URI:	https://stellarburgers.nomoreparties.site/api/auth/register/
@@ -128,19 +124,19 @@ Body:
     "name": "evljnkerv"
 }
 HTTP/1.1 200 OK
-Date: Tue, 23 May 2023 20:51:15 GMT
+Date: Wed, 24 May 2023 11:21:41 GMT
 Content-Type: application/json; charset=utf-8
 Transfer-Encoding: chunked
 Connection: keep-alive
 X-Powered-By: Express
 Access-Control-Allow-Origin: *
-authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0NmQyNzQzOWVkMjgwMDAxYjMyODFmYyIsImlhdCI6MTY4NDg3NTA3NSwiZXhwIjoxNjg0ODc2Mjc1fQ.FUlDU3ksPeCycjlkS_9tVjHeY-bMFt92IE3_NkiBezg
-ETag: W/"175-P+VfpxwfMeA93/VfY5Mb7FqH7eE"
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0NmRmMzQ1OWVkMjgwMDAxYjMyODk1MSIsImlhdCI6MTY4NDkyNzMwMSwiZXhwIjoxNjg0OTI4NTAxfQ.-OdSb6-YymFhyGAy9QaOXfo1kBnVrcSnS7-AaSHCZhg
+ETag: W/"175-dbCcESsqLHNIariMWzCfQbx/1V4"
 CF-Cache-Status: DYNAMIC
-Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=EOIPrBjIqXAFWCvASSpt%2FEQ2oFmucdiW1pb1lqfHTSbqvBS506rbdgUmg0qoLIyxMJRFA0m5HcVLq37LM2m%2Fu8Rn4AasjUCFO%2BqdUz8%2FXdywv0V0xngMv0tD3%2FEzPBqdbjsao%2FiDXvFEtusMz5C8rZdoIjo%3D"}],"group":"cf-nel","max_age":604800}
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=EM%2BiOUu%2B4%2FZyM%2BJ3lmEk2BDieNz76vxHfy6dtat%2BPxBfbRYfqqnQlbpN1HR84xGqO4U9PyicAzEn9JGTaAIiiln3Ydp%2Bx50%2FpTamrr1a9iQyTZ%2Fl%2Fh1Ip8ybBLJnLxYnXlMdopJh1XwgWZPuclx3lYXcaWM%3D"}],"group":"cf-nel","max_age":604800}
 NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
 Server: cloudflare
-CF-RAY: 7cc02d04aef7325f-VIE
+CF-RAY: 7cc52810bc3803ac-FRA
 Content-Encoding: gzip
 alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
 
@@ -150,23 +146,23 @@ alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
         "email": "ienrvioewcenrve@yandex.ru",
         "name": "evljnkerv"
     },
-    "accessToken": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0NmQyNzQzOWVkMjgwMDAxYjMyODFmYyIsImlhdCI6MTY4NDg3NTA3NSwiZXhwIjoxNjg0ODc2Mjc1fQ.FUlDU3ksPeCycjlkS_9tVjHeY-bMFt92IE3_NkiBezg",
-    "refreshToken": "5beecef4f64b2fa5e11b862792724120d7325f41df85a6e6593ca4bdc27d19a750ac8a17abfbcd5a"
+    "accessToken": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0NmRmMzQ1OWVkMjgwMDAxYjMyODk1MSIsImlhdCI6MTY4NDkyNzMwMSwiZXhwIjoxNjg0OTI4NTAxfQ.-OdSb6-YymFhyGAy9QaOXfo1kBnVrcSnS7-AaSHCZhg",
+    "refreshToken": "9a2713c467e247fef12b8b80ac0e11a215fc85802a53380913d8c4df95ee0125fccea18c17eaa8cf"
 }
 HTTP/1.1 200 OK
-Date: Tue, 23 May 2023 20:51:15 GMT
+Date: Wed, 24 May 2023 11:21:41 GMT
 Content-Type: application/json; charset=utf-8
 Transfer-Encoding: chunked
 Connection: keep-alive
 X-Powered-By: Express
 Access-Control-Allow-Origin: *
-authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0NmQyNzQzOWVkMjgwMDAxYjMyODFmYyIsImlhdCI6MTY4NDg3NTA3NSwiZXhwIjoxNjg0ODc2Mjc1fQ.FUlDU3ksPeCycjlkS_9tVjHeY-bMFt92IE3_NkiBezg
-ETag: W/"175-P+VfpxwfMeA93/VfY5Mb7FqH7eE"
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0NmRmMzQ1OWVkMjgwMDAxYjMyODk1MSIsImlhdCI6MTY4NDkyNzMwMSwiZXhwIjoxNjg0OTI4NTAxfQ.-OdSb6-YymFhyGAy9QaOXfo1kBnVrcSnS7-AaSHCZhg
+ETag: W/"175-dbCcESsqLHNIariMWzCfQbx/1V4"
 CF-Cache-Status: DYNAMIC
-Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=EOIPrBjIqXAFWCvASSpt%2FEQ2oFmucdiW1pb1lqfHTSbqvBS506rbdgUmg0qoLIyxMJRFA0m5HcVLq37LM2m%2Fu8Rn4AasjUCFO%2BqdUz8%2FXdywv0V0xngMv0tD3%2FEzPBqdbjsao%2FiDXvFEtusMz5C8rZdoIjo%3D"}],"group":"cf-nel","max_age":604800}
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=EM%2BiOUu%2B4%2FZyM%2BJ3lmEk2BDieNz76vxHfy6dtat%2BPxBfbRYfqqnQlbpN1HR84xGqO4U9PyicAzEn9JGTaAIiiln3Ydp%2Bx50%2FpTamrr1a9iQyTZ%2Fl%2Fh1Ip8ybBLJnLxYnXlMdopJh1XwgWZPuclx3lYXcaWM%3D"}],"group":"cf-nel","max_age":604800}
 NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
 Server: cloudflare
-CF-RAY: 7cc02d04aef7325f-VIE
+CF-RAY: 7cc52810bc3803ac-FRA
 Content-Encoding: gzip
 alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
 
@@ -176,23 +172,23 @@ alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
         "email": "ienrvioewcenrve@yandex.ru",
         "name": "evljnkerv"
     },
-    "accessToken": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0NmQyNzQzOWVkMjgwMDAxYjMyODFmYyIsImlhdCI6MTY4NDg3NTA3NSwiZXhwIjoxNjg0ODc2Mjc1fQ.FUlDU3ksPeCycjlkS_9tVjHeY-bMFt92IE3_NkiBezg",
-    "refreshToken": "5beecef4f64b2fa5e11b862792724120d7325f41df85a6e6593ca4bdc27d19a750ac8a17abfbcd5a"
+    "accessToken": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0NmRmMzQ1OWVkMjgwMDAxYjMyODk1MSIsImlhdCI6MTY4NDkyNzMwMSwiZXhwIjoxNjg0OTI4NTAxfQ.-OdSb6-YymFhyGAy9QaOXfo1kBnVrcSnS7-AaSHCZhg",
+    "refreshToken": "9a2713c467e247fef12b8b80ac0e11a215fc85802a53380913d8c4df95ee0125fccea18c17eaa8cf"
 }
 HTTP/1.1 200 OK
-Date: Tue, 23 May 2023 20:51:15 GMT
+Date: Wed, 24 May 2023 11:21:41 GMT
 Content-Type: application/json; charset=utf-8
 Transfer-Encoding: chunked
 Connection: keep-alive
 X-Powered-By: Express
 Access-Control-Allow-Origin: *
-authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0NmQyNzQzOWVkMjgwMDAxYjMyODFmYyIsImlhdCI6MTY4NDg3NTA3NSwiZXhwIjoxNjg0ODc2Mjc1fQ.FUlDU3ksPeCycjlkS_9tVjHeY-bMFt92IE3_NkiBezg
-ETag: W/"175-P+VfpxwfMeA93/VfY5Mb7FqH7eE"
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0NmRmMzQ1OWVkMjgwMDAxYjMyODk1MSIsImlhdCI6MTY4NDkyNzMwMSwiZXhwIjoxNjg0OTI4NTAxfQ.-OdSb6-YymFhyGAy9QaOXfo1kBnVrcSnS7-AaSHCZhg
+ETag: W/"175-dbCcESsqLHNIariMWzCfQbx/1V4"
 CF-Cache-Status: DYNAMIC
-Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=EOIPrBjIqXAFWCvASSpt%2FEQ2oFmucdiW1pb1lqfHTSbqvBS506rbdgUmg0qoLIyxMJRFA0m5HcVLq37LM2m%2Fu8Rn4AasjUCFO%2BqdUz8%2FXdywv0V0xngMv0tD3%2FEzPBqdbjsao%2FiDXvFEtusMz5C8rZdoIjo%3D"}],"group":"cf-nel","max_age":604800}
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=EM%2BiOUu%2B4%2FZyM%2BJ3lmEk2BDieNz76vxHfy6dtat%2BPxBfbRYfqqnQlbpN1HR84xGqO4U9PyicAzEn9JGTaAIiiln3Ydp%2Bx50%2FpTamrr1a9iQyTZ%2Fl%2Fh1Ip8ybBLJnLxYnXlMdopJh1XwgWZPuclx3lYXcaWM%3D"}],"group":"cf-nel","max_age":604800}
 NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
 Server: cloudflare
-CF-RAY: 7cc02d04aef7325f-VIE
+CF-RAY: 7cc52810bc3803ac-FRA
 Content-Encoding: gzip
 alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
 
@@ -202,8 +198,8 @@ alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
         "email": "ienrvioewcenrve@yandex.ru",
         "name": "evljnkerv"
     },
-    "accessToken": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0NmQyNzQzOWVkMjgwMDAxYjMyODFmYyIsImlhdCI6MTY4NDg3NTA3NSwiZXhwIjoxNjg0ODc2Mjc1fQ.FUlDU3ksPeCycjlkS_9tVjHeY-bMFt92IE3_NkiBezg",
-    "refreshToken": "5beecef4f64b2fa5e11b862792724120d7325f41df85a6e6593ca4bdc27d19a750ac8a17abfbcd5a"
+    "accessToken": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0NmRmMzQ1OWVkMjgwMDAxYjMyODk1MSIsImlhdCI6MTY4NDkyNzMwMSwiZXhwIjoxNjg0OTI4NTAxfQ.-OdSb6-YymFhyGAy9QaOXfo1kBnVrcSnS7-AaSHCZhg",
+    "refreshToken": "9a2713c467e247fef12b8b80ac0e11a215fc85802a53380913d8c4df95ee0125fccea18c17eaa8cf"
 }
 Request method:	DELETE
 Request URI:	https://stellarburgers.nomoreparties.site/api/auth/user/
@@ -212,7 +208,7 @@ Request params:	<none>
 Query params:	<none>
 Form params:	<none>
 Path params:	<none>
-Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0NmQyNzQzOWVkMjgwMDAxYjMyODFmYyIsImlhdCI6MTY4NDg3NTA3NSwiZXhwIjoxNjg0ODc2Mjc1fQ.FUlDU3ksPeCycjlkS_9tVjHeY-bMFt92IE3_NkiBezg
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0NmRmMzQ1OWVkMjgwMDAxYjMyODk1MSIsImlhdCI6MTY4NDkyNzMwMSwiZXhwIjoxNjg0OTI4NTAxfQ.-OdSb6-YymFhyGAy9QaOXfo1kBnVrcSnS7-AaSHCZhg
 				Accept=*/*
 				Content-Type=application/json
 Cookies:		<none>
@@ -225,7 +221,7 @@ Request params:	<none>
 Query params:	<none>
 Form params:	<none>
 Path params:	<none>
-Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0NmQyNzQzOWVkMjgwMDAxYjMyODFmYyIsImlhdCI6MTY4NDg3NTA3NSwiZXhwIjoxNjg0ODc2Mjc1fQ.FUlDU3ksPeCycjlkS_9tVjHeY-bMFt92IE3_NkiBezg
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0NmRmMzQ1OWVkMjgwMDAxYjMyODk1MSIsImlhdCI6MTY4NDkyNzMwMSwiZXhwIjoxNjg0OTI4NTAxfQ.-OdSb6-YymFhyGAy9QaOXfo1kBnVrcSnS7-AaSHCZhg
 				Accept=*/*
 				Content-Type=application/json
 Cookies:		<none>
@@ -238,14 +234,14 @@ Request params:	<none>
 Query params:	<none>
 Form params:	<none>
 Path params:	<none>
-Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0NmQyNzQzOWVkMjgwMDAxYjMyODFmYyIsImlhdCI6MTY4NDg3NTA3NSwiZXhwIjoxNjg0ODc2Mjc1fQ.FUlDU3ksPeCycjlkS_9tVjHeY-bMFt92IE3_NkiBezg
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0NmRmMzQ1OWVkMjgwMDAxYjMyODk1MSIsImlhdCI6MTY4NDkyNzMwMSwiZXhwIjoxNjg0OTI4NTAxfQ.-OdSb6-YymFhyGAy9QaOXfo1kBnVrcSnS7-AaSHCZhg
 				Accept=*/*
 				Content-Type=application/json
 Cookies:		<none>
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 202 Accepted
-Date: Tue, 23 May 2023 20:51:18 GMT
+Date: Wed, 24 May 2023 11:21:44 GMT
 Content-Type: application/json; charset=utf-8
 Content-Length: 54
 Connection: keep-alive
@@ -253,10 +249,10 @@ X-Powered-By: Express
 Access-Control-Allow-Origin: *
 ETag: W/"36-hDmZnQ3Ou/ynnqAeC6TYmyseuzY"
 CF-Cache-Status: DYNAMIC
-Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=5XIMysmXJ%2FicGpxtUYtzZ4evnqij%2BiqMAN%2F5NEBbJffWy1i6KSWmSbBtDtBmo9OKtlHRp%2BuRBlF%2BwmS2ex0aEuQADSPbpWHr0bmmpS5wiX%2BR9KFwG%2FJAqwIpmoLFRmXzoyaKxUCkhjJ3n9aVsi0zDzwSZME%3D"}],"group":"cf-nel","max_age":604800}
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=683OIJ%2BLMl8ADAACsI8rvcdzjNpqB4UfJetyHyqvhXBFIZ%2BF1xtpn7GN52xKsuuulWmXRjgA9R18lET5TGRN2fWhj7J0yqp2HAD%2FJ%2FuIflQmgTT6JQb%2BT22qukYdjEUo5sfmR6QJa0t1%2BfoIhBazzxrAYus%3D"}],"group":"cf-nel","max_age":604800}
 NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
 Server: cloudflare
-CF-RAY: 7cc02d156b4277f7-VIE
+CF-RAY: 7cc528256f3318d5-FRA
 alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
 
 {
@@ -264,7 +260,7 @@ alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
     "message": "User successfully removed"
 }
 HTTP/1.1 202 Accepted
-Date: Tue, 23 May 2023 20:51:18 GMT
+Date: Wed, 24 May 2023 11:21:44 GMT
 Content-Type: application/json; charset=utf-8
 Content-Length: 54
 Connection: keep-alive
@@ -272,10 +268,10 @@ X-Powered-By: Express
 Access-Control-Allow-Origin: *
 ETag: W/"36-hDmZnQ3Ou/ynnqAeC6TYmyseuzY"
 CF-Cache-Status: DYNAMIC
-Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=5XIMysmXJ%2FicGpxtUYtzZ4evnqij%2BiqMAN%2F5NEBbJffWy1i6KSWmSbBtDtBmo9OKtlHRp%2BuRBlF%2BwmS2ex0aEuQADSPbpWHr0bmmpS5wiX%2BR9KFwG%2FJAqwIpmoLFRmXzoyaKxUCkhjJ3n9aVsi0zDzwSZME%3D"}],"group":"cf-nel","max_age":604800}
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=683OIJ%2BLMl8ADAACsI8rvcdzjNpqB4UfJetyHyqvhXBFIZ%2BF1xtpn7GN52xKsuuulWmXRjgA9R18lET5TGRN2fWhj7J0yqp2HAD%2FJ%2FuIflQmgTT6JQb%2BT22qukYdjEUo5sfmR6QJa0t1%2BfoIhBazzxrAYus%3D"}],"group":"cf-nel","max_age":604800}
 NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
 Server: cloudflare
-CF-RAY: 7cc02d156b4277f7-VIE
+CF-RAY: 7cc528256f3318d5-FRA
 alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
 
 {
@@ -283,7 +279,7 @@ alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
     "message": "User successfully removed"
 }
 HTTP/1.1 202 Accepted
-Date: Tue, 23 May 2023 20:51:18 GMT
+Date: Wed, 24 May 2023 11:21:44 GMT
 Content-Type: application/json; charset=utf-8
 Content-Length: 54
 Connection: keep-alive
@@ -291,10 +287,10 @@ X-Powered-By: Express
 Access-Control-Allow-Origin: *
 ETag: W/"36-hDmZnQ3Ou/ynnqAeC6TYmyseuzY"
 CF-Cache-Status: DYNAMIC
-Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=5XIMysmXJ%2FicGpxtUYtzZ4evnqij%2BiqMAN%2F5NEBbJffWy1i6KSWmSbBtDtBmo9OKtlHRp%2BuRBlF%2BwmS2ex0aEuQADSPbpWHr0bmmpS5wiX%2BR9KFwG%2FJAqwIpmoLFRmXzoyaKxUCkhjJ3n9aVsi0zDzwSZME%3D"}],"group":"cf-nel","max_age":604800}
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=683OIJ%2BLMl8ADAACsI8rvcdzjNpqB4UfJetyHyqvhXBFIZ%2BF1xtpn7GN52xKsuuulWmXRjgA9R18lET5TGRN2fWhj7J0yqp2HAD%2FJ%2FuIflQmgTT6JQb%2BT22qukYdjEUo5sfmR6QJa0t1%2BfoIhBazzxrAYus%3D"}],"group":"cf-nel","max_age":604800}
 NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
 Server: cloudflare
-CF-RAY: 7cc02d156b4277f7-VIE
+CF-RAY: 7cc528256f3318d5-FRA
 alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
 
 {
@@ -302,14 +298,106 @@ alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
     "message": "User successfully removed"
 }
 ]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 113.0.5672.63 (0e1a4471d5ae5bf128b1bd8f4d627c8cbd55f70c-refs/branch-heads/5672@{#912}) on port 25183
+    <system-err><![CDATA[Starting ChromeDriver 110.0.5481.77 (65ed616c6e8ee3fe0ad64fe83796c020644d42af-refs/branch-heads/5481@{#839}) on port 39807
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-May 23, 2023 11:51:15 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find CDP implementation matching 113
-May 23, 2023 11:51:15 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$3
+[1684927300.841][WARNING]: virtual void DevToolsClientImpl::AddListener(DevToolsEventListener *) subscribing a listener to the already connected DevToolsClient. Connection notification will not arrive.
+May 24, 2023 2:21:40 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 110
+May 24, 2023 2:21:40 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$3
 WARNING: Unable to find version of CDP to use for . You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.8.2` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+java.lang.instrument.IllegalClassFormatException: Error while instrumenting Script1.
+	at org.jacoco.agent.rt.internal_3570298.CoverageTransformer.transform(CoverageTransformer.java:94)
+	at java.instrument/java.lang.instrument.ClassFileTransformer.transform(ClassFileTransformer.java:244)
+	at java.instrument/sun.instrument.TransformerManager.transform(TransformerManager.java:188)
+	at java.instrument/sun.instrument.InstrumentationImpl.transform(InstrumentationImpl.java:541)
+	at java.base/java.lang.ClassLoader.defineClass1(Native Method)
+	at java.base/java.lang.ClassLoader.defineClass(ClassLoader.java:1013)
+	at java.base/java.security.SecureClassLoader.defineClass(SecureClassLoader.java:150)
+	at groovy.lang.GroovyClassLoader.access$400(GroovyClassLoader.java:89)
+	at groovy.lang.GroovyClassLoader$ClassCollector.createClass(GroovyClassLoader.java:690)
+	at groovy.lang.GroovyClassLoader$ClassCollector.onClassNode(GroovyClassLoader.java:707)
+	at groovy.lang.GroovyClassLoader$ClassCollector.call(GroovyClassLoader.java:712)
+	at org.codehaus.groovy.control.CompilationUnit$3.call(CompilationUnit.java:806)
+	at org.codehaus.groovy.control.CompilationUnit$IPrimaryClassNodeOperation.doPhaseOperation(CompilationUnit.java:937)
+	at org.codehaus.groovy.control.CompilationUnit.processPhaseOperations(CompilationUnit.java:692)
+	at org.codehaus.groovy.control.CompilationUnit.compile(CompilationUnit.java:666)
+	at groovy.lang.GroovyClassLoader.doParseClass(GroovyClassLoader.java:373)
+	at groovy.lang.GroovyClassLoader.lambda$parseClass$2(GroovyClassLoader.java:316)
+	at org.codehaus.groovy.runtime.memoize.StampedCommonCache.compute(StampedCommonCache.java:163)
+	at org.codehaus.groovy.runtime.memoize.StampedCommonCache.getAndPut(StampedCommonCache.java:154)
+	at groovy.lang.GroovyClassLoader.parseClass(GroovyClassLoader.java:314)
+	at groovy.lang.GroovyShell.parseClass(GroovyShell.java:572)
+	at groovy.lang.GroovyShell.parse(GroovyShell.java:585)
+	at groovy.lang.GroovyShell.parse(GroovyShell.java:597)
+	at groovy.lang.GroovyShell.evaluate(GroovyShell.java:459)
+	at groovy.lang.GroovyShell.evaluate(GroovyShell.java:495)
+	at groovy.lang.GroovyShell.evaluate(GroovyShell.java:469)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrap.invoke(PogoMetaMethodSite.java:186)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.call(PogoMetaMethodSite.java:75)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:139)
+	at io.restassured.internal.path.json.JSONAssertion.eval(JSONAssertion.groovy:84)
+	at io.restassured.internal.path.json.JSONAssertion.this$2$eval(JSONAssertion.groovy)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:203)
+	at io.restassured.internal.path.json.JSONAssertion.getAsJsonObject(JSONAssertion.groovy:46)
+	at io.restassured.internal.path.json.JSONAssertion$getAsJsonObject.callCurrent(Unknown Source)
+	at io.restassured.internal.path.json.JSONAssertion.getResult(JSONAssertion.groovy:28)
+	at io.restassured.path.json.JsonPath.get(JsonPath.java:203)
+	at io.restassured.path.json.JsonPath$get$0.call(Unknown Source)
+	at io.restassured.internal.RestAssuredResponseOptionsGroovyImpl.path(RestAssuredResponseOptionsGroovyImpl.groovy:410)
+	at io.restassured.internal.RestAssuredResponseOptionsImpl.path(RestAssuredResponseOptionsImpl.java:230)
+	at ConstructorTest.constructorTabsTest(ConstructorTest.java:47)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:365)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:273)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:159)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+Caused by: java.io.IOException: Error while instrumenting Script1.
+	at org.jacoco.agent.rt.internal_3570298.core.instr.Instrumenter.instrumentError(Instrumenter.java:160)
+	at org.jacoco.agent.rt.internal_3570298.core.instr.Instrumenter.instrument(Instrumenter.java:110)
+	at org.jacoco.agent.rt.internal_3570298.CoverageTransformer.transform(CoverageTransformer.java:92)
+	... 76 more
+Caused by: java.lang.IllegalArgumentException: Unsupported class file major version 63
+	at org.jacoco.agent.rt.internal_3570298.asm.ClassReader.<init>(ClassReader.java:196)
+	at org.jacoco.agent.rt.internal_3570298.asm.ClassReader.<init>(ClassReader.java:177)
+	at org.jacoco.agent.rt.internal_3570298.asm.ClassReader.<init>(ClassReader.java:163)
+	at org.jacoco.agent.rt.internal_3570298.core.internal.instr.InstrSupport.classReaderFor(InstrSupport.java:280)
+	at org.jacoco.agent.rt.internal_3570298.core.instr.Instrumenter.instrument(Instrumenter.java:76)
+	at org.jacoco.agent.rt.internal_3570298.core.instr.Instrumenter.instrument(Instrumenter.java:108)
+	... 77 more
 ]]></system-err>
   </testcase>
 </testsuite>

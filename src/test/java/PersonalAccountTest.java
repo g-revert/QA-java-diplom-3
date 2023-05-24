@@ -13,6 +13,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import stellarPageObject.LoginPage;
 import stellarPageObject.MainStellarBurgersPage;
 
+import static driver.WebDriverCreator.createWebDriver;
 import static org.junit.Assert.assertEquals;
 
 public class PersonalAccountTest {
@@ -28,7 +29,7 @@ public class PersonalAccountTest {
 
     @Before
     public void setUp() {
-        driver = new ChromeDriver();
+        driver = createWebDriver();
         userSteps = new UserSteps();
     }
 

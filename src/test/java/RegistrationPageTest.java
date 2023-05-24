@@ -11,6 +11,8 @@ import org.junit.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import stellarPageObject.RegistrationPage;
+
+import static driver.WebDriverCreator.createWebDriver;
 import static org.junit.Assert.assertEquals;
 
 public class RegistrationPageTest {
@@ -26,7 +28,7 @@ public class RegistrationPageTest {
 
     @Before
     public void setUp() {
-        driver = new ChromeDriver();
+        driver = createWebDriver();
         userSteps = new UserSteps();
     }
 
