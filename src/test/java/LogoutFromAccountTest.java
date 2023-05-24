@@ -36,13 +36,13 @@ public class LogoutFromAccountTest {
 
     @Test
     public void logoutFromAccountTest() {
-        User user = new User("jkbnmbaisoiwyewe@yandex.ru", "wweocbwoec", "evljnkerv");
+        User user = new User("khgckhcgghkc@yandex.ru", "wweocbwoec", "evljnkerv");
         ValidatableResponse createResponse = userSteps.create(user);
         LoginPage loginPage = new LoginPage(driver);
         MainStellarBurgersPage mainStellarBurgersPage = new MainStellarBurgersPage(driver);
         driver.get(PAGE_URL);
         loginPage.enterLoginPage(".//div/button[text()='Войти в аккаунт']");
-        loginPage.loginUserPage("jkbnmbaisoiwyewe@yandex.ru", "wweocbwoec");
+        loginPage.loginUserPage("khgckhcgghkc@yandex.ru", "wweocbwoec");
         mainStellarBurgersPage.checkPersonalAccount();
         mainStellarBurgersPage.logoutFromAccount();
         token = createResponse.extract().path("accessToken");

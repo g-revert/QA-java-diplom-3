@@ -1,17 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: ConstructorTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 5.016 s <<< FAILURE! - in ConstructorTest
-constructorTabsTest(ConstructorTest)  Time elapsed: 5.014 s  <<< ERROR!
-org.openqa.selenium.NoSuchElementException: 
-no such element: Unable to locate element: {"method":"xpath","selector":"(.//section/div/div)[2]"}
-  (Session info: chrome=110.0.5481.208)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.8.2', revision: '826dbfc730'
-System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.3.1', java.version: '19.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [8343c5f18de79b39d733525ad7b9da1d, findElement {using=xpath, value=(.//section/div/div)[2]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.208, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: /var/folders/7z/xk_0s2617tl...}, goog:chromeOptions: {debuggerAddress: localhost:56052}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:56052/devtoo..., se:cdpVersion: 110.0.5481.208, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 8343c5f18de79b39d733525ad7b9da1d
-	at ConstructorTest.constructorTabsTest(ConstructorTest.java:50)
-
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.614 s - in ConstructorTest
