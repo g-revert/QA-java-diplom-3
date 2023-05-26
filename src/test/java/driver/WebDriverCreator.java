@@ -22,11 +22,10 @@ public class WebDriverCreator {
         }
     }
     private static WebDriver createChromeDriver() {
-        System.setProperty("webDriver.chrome.driver", YANDEX_DRIVER_PATH);
         ChromeOptions chromeOptions = new ChromeOptions();
-        chromeOptions.setBinary(YANDEX_BROWSER_PATH);
         return new ChromeDriver(chromeOptions);
     }
+
     private static WebDriver createYandexDriver() {
         System.setProperty("webDriver.chrome.driver", YANDEX_DRIVER_PATH);
         ChromeOptions yandexOptions = new ChromeOptions();
