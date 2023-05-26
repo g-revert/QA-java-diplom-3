@@ -21,6 +21,7 @@ public class WebDriverCreator {
                 return createChromeDriver();
         }
     }
+
     private static WebDriver createChromeDriver() {
         ChromeOptions chromeOptions = new ChromeOptions();
         return new ChromeDriver(chromeOptions);
