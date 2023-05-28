@@ -36,13 +36,13 @@ public class ConstructorTest {
 
     @Test
     public void bunTabTest() {
-        User user = new User("wjkebbjkwbjkwevwevwev@yandex.ru", "pwieeciweknewn", "evljnkerv");
+        User user = new User("ervervevdvvvvvv@yandex.ru", "pwieeciweknewn", "evljnkerv");
         ValidatableResponse createResponse = userSteps.create(user);
         LoginPage loginPage = new LoginPage(driver);
         ConstructorPage constructorPage = new ConstructorPage(driver);
         driver.get(PAGE_URL);
         loginPage.enterLoginPage(".//div/button[text()='Войти в аккаунт']");
-        loginPage.loginUserPage("wjkebbjkwbjkwevwevwev@yandex.ru", "pwieeciweknewn");
+        loginPage.loginUserPage("ervervevdvvvvvv@yandex.ru", "pwieeciweknewn");
         token = createResponse.extract().path("accessToken");
         loginPage.waitForPageLoading();
 

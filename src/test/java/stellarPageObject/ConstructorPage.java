@@ -16,6 +16,8 @@ public class ConstructorPage {
     }
 
     public boolean isTabSelected(String currentTab) {
+        new WebDriverWait(driver, Duration.ofSeconds(3))
+                .until(ExpectedConditions.visibilityOfElementLocated(By.xpath(currentTab)));
         String getAttribute = driver.findElement(By.xpath(currentTab)).getAttribute("class");
 
         return (getAttribute.contains("current"));

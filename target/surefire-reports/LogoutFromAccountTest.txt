@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: LogoutFromAccountTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.078 s - in LogoutFromAccountTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.801 s - in LogoutFromAccountTest
