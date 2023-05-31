@@ -1,0 +1,12 @@
+LoginFlowTest.class
+stellarPageObject/ConstructorPage.class
+stellarPageObject/LoginPage.class
+stellarPageObject/UserPage.class
+ReachConstructorTest.class
+ConstructorTest.class
+RegistrationPageTest.class
+stellarPageObject/MainStellarBurgersPage.class
+LogoutFromAccountTest.class
+driver/WebDriverCreator.class
+PersonalAccountTest.class
+stellarPageObject/RegistrationPage.class
