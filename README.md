@@ -4,6 +4,9 @@ This project is testing the UI of a [Stellar Burgers](https://stellarburgers.nom
 Frameworks used:
 Maven, Junit 4, Rest Assured, Selenium, Allure.
 
+Drivers used:
+ChromeDriver, YandexDriver (v113).
+
 How to run the tests:
 - open IntelliJ IDEA
 - clone the repo via this link https://github.com/tevizo/QA-java-diplom-1.git
